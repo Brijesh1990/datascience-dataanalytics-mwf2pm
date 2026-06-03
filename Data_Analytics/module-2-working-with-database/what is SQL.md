@@ -1,185 +1,302 @@
-# what is SQL  ?
+# what is SQL ?
 
-  1. SQL stands for structured query language
-  2. SQL case insenstive language
-     examples : INSERT or insert or Insert
-  3. sql is used to create an structured of tables or database  
-  4. sql is used to create database or tables and manupulate data 
-  5. SQL create structures or manipulate data in table 
-  6. SQL is maximum create 1032 columns 
-  7. SQL is faster to create structured data or insert data or delete data or update data 
+SQL (Structured Query Language) is a standardized programming language used for managing and manipulating relational databases. It allows users to create, read, update, and delete data efficiently.
+
+## Characteristics of SQL
+
+ 1. SQL is a structured query language 
+ 2. SQL is structured query based language 
+ 3. SQL is used to create a database and tables structured
+ 4. SQL will manage and provides relationship between tables  
+ 5. SQL is case-insensitive language
+ 6. SQL is most commonly used to create an structured database
+
+## Advantages of SQL
+
+ 1. **Easy to Learn** - SQL has a simple and intuitive syntax that resembles English, making it easy for beginners to learn
+
+ 2. **Portability** - SQL works across different platforms and database systems (MySQL, PostgreSQL, Oracle, SQL Server, etc.)
  
+ 3. **High Performance** - SQL efficiently handles large volumes of data and performs complex queries quickly
+ 
+ 4. **Data Security** - SQL provides authentication and authorization mechanisms to protect sensitive data
+ 
+ 5. **ACID Compliance** - SQL supports transactions with ACID properties (Atomicity, Consistency, Isolation, Durability)
+ 
+ 6. **Data Integrity** - SQL enforces referential integrity and constraints to maintain data consistency
+ 
+ 7. **Standardized Language** - SQL follows standardized syntax across most relational database systems
+ 
+ 8. **Scalability** - SQL databases can handle growing volumes of data without performance degradation
+ 
+ 9. **Flexibility** - SQL supports complex queries and multiple data retrieval methods 
 
-# employee details table with columnname id, name , email , address , mobile etc
 
-**employee**
+# SQL commands or query 
 
-| ID  | Name           | Email                     | Phone        | Address                     | Salary |
-|-----|----------------|---------------------------|--------------|-----------------------------|--------|
-| 101 | John Doe       | john.doe@example.com      | 9876543210   | 12 Main St, New York        | 55000  |
-| 102 | Sarah Smith    | sarah.smith@example.com   | 9123456780   | 45 Oak Ave, Chicago         | 62000  |
-| 103 | Michael Brown  | michael.brown@example.com | 9988776655   | 78 Pine Rd, California      | 58000  |
-| 104 | Emily Johnson  | emily.johnson@example.com | 9012345678   | 23 Lake View, Texas         | 64000  |
-| 105 | David Wilson   | david.wilson@example.com  | 9090909090   | 56 Hill St, Florida         | 60000  |
+  1. SQL provides some query or commands 
+  2. SQL is case - insenstive 
+     examples : INSERT | insert | Insert
+  3. best way to write query in small case 
 
-
-# types of  SQL query or commands
+  **types of SQL query**
 
   1. DDL (data definition language)
-  2. DML (data manipulate language)
+  2. DML (data manipulation language)
   3. DQL (data query language)
-  4. TCL (transanctional query language)
+  4. TCL (Transactional query language)
+ 
+
+ # mysql start database 
+
+   1. xampp is a server tools 
+      
+      X -cross plateform(support all OS)
+      A -apache (server)
+      M -MySQL (database)
+      P -Perl
+      P -php
+
+      **how to download xampp**
+
+      ```
+      https://www.apachefriends.org/ 
+
+      ``` 
+
+      ![alt text](image.png)
+      
+      localhost/phpmyadmin
 
 
-# what is DDL ....  Data definition language
 
-  1. stands for data definition language 
-  2. DDL used to create database and table structures 
-  3. DDL is also used to drop & alter the database structures and tables data
+# 2. mySQLworkBench2.0
 
-  **List of command or query in DDL**
+      MySQLworkbench is also used for mysql database 
+      MySQLworkbench is also used to create database | tables create 
 
-  1. create (create database or tables structures)
-  2. alter  (alter used to add | modify  | rename  new  column after create tables)
-  3. drop
-  4. rename
-  5. change 
-  6. truncate
 
-  **How to create database**
+**download and start**  
 
-  ```
-  syntax ..
-  create database databasename
-  examples : 
-  create database data_analytics
-  ```  
+```
+https://dev.mysql.com/downloads/file/?id=552199
 
-  **How to create a table**
+```
+
+# DDL (data definition language)
+
+  1. DDL is used to create a database and table structured 
+  2. DDL is also used to add | modify | rename any column name of table.
+  3. DDL also drop and truncate a structures 
+  4. DDL is also used to change the columnname of table 
+
+
+  **examples of DDL**
+
+  1. create 
+  2. alter 
+  3. rename 
+  4. drop 
+  5. change
+  6. truncate   
+
+**How to create a database structured**
+
+ **syntax**
+
+ ```
+ create database databasename;
+ or
+ create database flipkart_shop;
+
+ ```
   
-  **create columnname in tables fixed data-type**
+**How to create a table structures**
 
-  1. char .....accept character values size(0-255)
-  2. varchar .....accept character and numbers both values size(0-255)
-  3. int..........accept numbers only default size(0-11)
-  4. bigint ......accept more than 11 number default size(0-20)
-  5. text.........accept more than 65365 character  
-  6. enum .........enumerated accept multiple choices values
-  7. date...........accept date formate 
-  8. datatime........accept datetime both
-  9. float...........accept decimal values 
-  10. money..........accept price & all   
-  
- **syntax to create table** 
+**chart of table to create fieldname and datatype and its size in SQL**
 
-  ```
-  create table tablename
-  (
-  columnname datatype(size) primary key auto_increment,
-  columname datatype(size),
+```
+
+| Data Type    | Description           | Example             |
+| ------------ | --------------------- | ------------------- |
+| INT          | Whole numbers         | 1, 100              |
+| BIGINT       | Large whole numbers   | 999999999           |
+| VARCHAR(n)   | Variable-length text  | VARCHAR(0-255)      |
+| CHAR(n)      | Fixed-length text     | CHAR(1)             |
+| TEXT         | Long text             | Paragraph           |
+| DATE         | Date only             | 2026-05-25          |
+| DATETIME     | Date + time           | 2026-05-25 10:30:00 |
+| DECIMAL(p,s) | Exact decimal numbers | DECIMAL(10,2)       |
+| FLOAT        | Decimal numbers       | 12.5                |
+| BOOLEAN      | True/False            | TRUE                |
+| BLOB         | Binary data/files     | Images/files        |
+| ENUM         | select multiple choice| multiple choices    | 
+
+
+```
+
+**syntax to create a table in SQL**
+```
+create table tablename
+(
+  columnname1 datatype(size) auto_increment primary key,
+  columnname2 datatype(size),
   .
   .
   .
   .
   .
-  columnname datatype(size)
+)
+```
 
-  );
+**examples**
 
-  ```
-  
-  **examples of create table***
+**create a employee tables**
 
-  ```
-  create table employee
+```
+create table employee
 (
 empid int primary key AUTO_INCREMENT,
-name varchar(100),
-email varchar(255),
+name varchar(155),
 password varchar(255),
-address text,
-phone bigint,
-picode int,
-salary float    
-)
-
-```
-
-```
-create table country
-(
-cid int primary key AUTO_INCREMENT,
-countryname varchar(255),
-added_date varchar(255)    
-
-)
-
-```
-
-```
-create table feedback
-(
-id int primary key AUTO_INCREMENT,
-name varchar(255),
 email varchar(255),
 phone bigint,
-rating varchar(255),
-comment text,
-added_date date    
-)
+address text    
+    
+);
 
 ```
 
-
- **alter**
-
-1. alter : (alter used to add | modify  | rename | drop  a   column after create tables)
+**create a reviews contact**
 
 ```
-add new column...
-
-1. alter table employee add added_date date;
-2. alter table employee add country varchar(155);
-3. alter table employee add photo varchar(255) after empid;
-
-rename any columns 
-
-1. alter table employee change salary employee_salary varchar(255);
-2. alter table employee change photo employee_image varchar(255);
-
-delete any columns 
-
-1. alter table employee drop added_date;
+create table contact
+(
+contactid int primary key AUTO_INCREMENT,
+name varchar(155),
+email varchar(255),
+subject ENUM('24x7 customer support','return product','customer care numbers'),
+phone bigint,
+message text    
+    
+);
 
 ```
 
-**drop database & table structured**
+**create a reviews tables**
 
 ```
-delete a database and table structured after drop we can not rollback
+create table reviews
+(
+reviewsid int primary key AUTO_INCREMENT,
+name varchar(155),
+email varchar(255),
+ratings ENUM('1 star','2 star','3 star','4 star','5 star'),
+phone bigint,
+comment text    
+    
+);
+```
+
+**create a tables of products**
+
+```
+# Products Table Structure
+
+| Column Name | Data Type | Size | Description |
+|---|---|---|---|
+| product_id | INT | 11 | Unique product ID |
+| product_name | VARCHAR | 150 | Product name |
+| product_code | VARCHAR | 50 | Product SKU/code |
+| category_id | INT | 11 | Category reference ID |
+| brand_name | VARCHAR | 100 | Brand name |
+| price | DECIMAL | 10,2 | Product price |
+| stock_quantity | INT | 11 | Available stock |
+| weight | DECIMAL | 8,2 | Product weight |
+| color | VARCHAR | 50 | Product color |
+| size | VARCHAR | 20 | Product size |
+| description | TEXT | Large Text | Product description |
+| image_url | VARCHAR | 255 | Product image path/url |
+| is_active | BOOLEAN | — | Product active status |
+| created_at | DATETIME | — | Record creation time |
+| updated_at | DATETIME | — | Last updated time |
 
 ```
 
-**drop database**
+# SQL Create Table Query
+
+ ```
+ CREATE TABLE products (
+    product_id INT PRIMARY KEY AUTO_INCREMENT,
+    product_name VARCHAR(150) NOT NULL,
+    product_code VARCHAR(50) UNIQUE,
+    category_id INT,
+    brand_name VARCHAR(100),
+    price DECIMAL(10,2) NOT NULL,
+    stock_quantity INT DEFAULT 0,
+    weight DECIMAL(8,2),
+    color VARCHAR(50),
+    size VARCHAR(20),
+    description TEXT,
+    image_url VARCHAR(255),
+    is_active BOOLEAN DEFAULT TRUE,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+  );
 
 ```
 
-drop database databasename
-or
-drop database data_analytics
+# alter 
+  1. alter is used to add new columns in tables
+  2. alter is used to modify or change  columns name in tables
+  3. alter is used to drop  columns name in tables
 
-```
+ ```
+  alter is used to add | modify | update | drop a columns from table 
+  
+  1. alter table employee add added_date date;
+  2. alter table employee add is_Active boolean DEFAULT TRUE;
+  3. alter table employee add photo blob after email;
+  4. alter table employee CHANGE name employeename varchar(255)
+  5. alter table employee drop photo;
 
-**drop table only**
+ ```
 
-```
-drop a table it is drop or delete permanently after drop we can not rollback a data or structured of table
 
-drop table tablename
-or
-drop table country
+# rename : after create tables we rename the tables name
 
-```
+  ```
+  rename table reviews to flip_reviews
+
+  ```
+
+
+# drop : is drop database and tables both after drop we can not rollback anything 
+
+  **drop database**
+
+  ```
+ 
+   drop database databasename;
+   
+   or
+
+   drop database flipkart_shop
+ 
+  ```
+
+  **drop table**
+
+  ```
+ 
+   drop table tablename;
+   
+   or
+
+   drop table flip_contact
+ 
+  ```
+
 
 **truncate**
 
@@ -218,8 +335,6 @@ alter table tablename change columnname newcolumnname datatype(size);
 or
 alter table tbl_employee change password employee_password varchar(255);
 ```
-
-
 
 # what is DML ....  Data manipulation language
 
@@ -332,167 +447,308 @@ alter table tbl_employee change password employee_password varchar(255);
   select id,name,email,phone from tbl_reviews;
   or
   select * from tbl_reviews where id limit 1,6;
-  or
-  select * from tbl_reviews order by name asc
-  or
-  select * from tbl_reviews order by name desc
-  
+ 
+ 
   ```
 
-# SQL function ....
-
- 1. SQL function provides a group of code 
- 2. SQL function is inbuilt function 
- 3. SQL function is used to completed any task 
-
-# types of SQL function 
-
-  1. aggrigate function
-  2. scalar function 
-
-# aggrigate function 
-  1. sum 
-  2. avg 
-  3. count 
-  4. max
-  5. min
-
-# scalar function 
-  1. first 
-  2. last 
-  3. ucase
-  4. lcase
+  **order by and group by**
 
 
-# sum() : sum used to sum of values 
-   
-   **syntax**
+ # order by :
 
-   ```
-   select sum(employee_salary) as sumof_salary from tbl_employee
-   ```
+   1. order by filter data from tables in ascending or descending order
+   2. order by is used to sort data in ascending or descending order
 
-# alias : alias is a nick name of any column name     
+    **syntax**
+  
+    ```
+    select * from tablename order by columnname asc;
+    or
+    select * from tablename order by columnname desc;
 
-   ```
-    select employee_password as password from tbl_employee
-   ```
+    examples :
+    select * from flip_reviews order by name asc;
+    or
+    select * from flip_reviews order by name desc;
+    or
+    select * from flip_reviews order by id desc;
+    or
+    select * from flip_reviews order by id asc;
+    ```
 
-# avg() : avg used to calculate average values  
-   
-   **syntax**
+SQL function :
 
-   ```
-   select avg(employee_salary) as averageofsalary from tbl_employee
-   ```
+1. SQL function is used to perform some operations on data and return a single value
+2. SQL function is used to perform some operations on data and return a single value
 
-# count() : count used to calculate a count values   
-   
-   **syntax**
+# types of SQL function
 
-   ```
-   select count(empid) as totalnumberemployee from tbl_employee
-   or 
-   select count(id) as totalreviews from tbl_reviews
-   ```
-# max() : max used to calculate a max values   
-   
-   **syntax**
+1. aggregate function
 
-   ```
-  select max(employee_salary) as max_salary from tbl_employee
+   1. sum(): returns the total sum of a numeric column
 
-   ```
+      examples : select sum(salary) from flip_employee;
+                 or
+                 select sum(salary) as sumofsalary_ofemployee from flip_employee;  
 
-# min() : min used to calculate a min values   
-   
-   **syntax**
+  **as is used to give alias name to columnname or table name**
 
-   ```
-   
-  select min(employee_salary) as min_salary from tbl_employee
+   2. avg(): returns the average value of a numeric column
 
-   ```
+      examples : select avg(salary) from flip_employee;
+                 or
+                 select avg(salary) as avgsalary_ofemployee from flip_employee;
 
-# subquery : subquery used a query within another query i.e called subquery 
+   3. count(): returns the number of rows that match a specified condition
 
- 1. find a second highest salary from tables 
+      examples : select count(*) from flip_employee;
+                 or
+                 select count(*) as totalemployee from flip_employee;
+                 or
+                 select count(salary) from flip_employee where salary>16000;
 
- ```
-   select max(employee_salary) from tbl_employee where employee_salary < (select max(employee_salary) from tbl_employee);
-   
+   4. max(): returns the maximum value of a column
+      examples : select max(salary) from flip_employee;
+                 or
+                 select max(salary) as maxsalary_ofemployee from flip_employee;
+    
+   5. min(): returns the minimum value of a column
+
+      examples : select min(salary) from flip_employee;
+                 or
+                 select min(salary) as minsalary_ofemployee from flip_employee;
+
+
+  **note : aggregate function is used to perform some operations on data and return a single value**
+
+
+
+2. scalar function
+
+
+   1. firstname() : returns the first name of a person
+   2. lastname() : returns the last name of a person
+   3. length() : returns the length of a string
+   4. upper() : returns the string in uppercase
+   5. lower() : returns the string in lowercase
+   6. round() : rounds a numeric field to the number of decimals specified
+   7. now() : returns the current date and time
+
+
+  examples : select firstname(employeename) from flip_employee;
+             or
+             select lastname(employeename) from flip_employee;
+             or
+             select length(employeename) from flip_employee;
+             or
+             select ucase(name) from flip_employee;
+             or
+             select lcase(emplyeename) from flip_employee;
+             or
+             select round(salary,2) from flip_employee;
+             or
+             select now() from dual;
+
+  **note : scalar function is used to perform some operations on data and return a single value**
+
+  firstname() and lastname() function is used to return the first name and last name of a person from a full name column not supported in mysql but supported in sql server and oracle database
+
+
+# group by 
+
+ 1. group by is used to group data based on a column
+ 2. group by is used to group data based on a column and perform aggregate functions like
+
+  - count
+  - sum
+  - avg
+  - max
+  - min
+
+  **syntax**
+  
+  ```
+   select sum(salary) from flip_employee group by department;
    or
+   select department, sum(salary) from flip_employee group by department;
+   or
+   select sum(salary),department from flip_employee GROUP by department;
+   or
+   select sum(salary) as totalsalary,department from flip_employee GROUP by department;
 
-   select max(employee_salary) as second_highest_salary from tbl_employee where employee_salary < (select max(employee_salary) from tbl_employee); 
- ```
+  ```
 
-# first :find the first rows of data 
- **select first rows**
- ```
-  select first(id) from tbl_reviews
- ```  
+ # w.a.q to find second highest salary from employee table
+  
+  **subquery**
+  
+  1. query within another query is called subquery
+  2. subquery is used to find second highest salary from employee table
 
-# last: find the last rows of data
+  ```
+  select max(salary) from flip_employee where salary < (select max(salary) from flip_employee);   
+  or
+  select salary from flip_employee order by salary desc limit 1,1;
+  or
+  select salary from flip_employee order by salary desc limit 2,1;
+  
+  ```
+# like operator 
 
-   **select last rows**
-   ```
-  select last(id) from tbl_reviews
+  1. like operator is used to search for a specified pattern in a column
+  2. like operator is used to search for a specified pattern in a column using wildcards
+  
+  **wildcards**
+  
+  1. % : represents zero or more characters
+  2. _ : represents a single character
+  3. [ ] : represents any single character within the brackets
+  4. [^] : represents any single character not within the brackets
+  5. - : represents a range of characters
+  6. | : represents an OR condition
+  7. \ : escape character
+  8. ^ : represents the start of a string
+  9. $ : represents the end of a string
+  10. () : groups a series of conditions
+  
+  **syntax**
+  
+  ```
+  select * from tablename where columnname like 'pattern';
+  or
+  select * from flip_employee where employeename like 'a%'
+  or
+  select * from flip_employee where employeename like '%v'
+  or
+  select * from flip_employee where employeename like '%a%'
+  or
+  select * from flip_employee where employeename like '_a%'
+  or
+  select * from flip_employee where employeename like 'a_%';
+  or
+  select * from flip_employee where employeename like 'a__%';
+  or
+  select * from flip_employee where employeename like '%bri%'
+  or
+  select * from flip_employee where employeename like '%or%'
   
   ```
 
-# ucase :convert any columnname of data in uppercase 
+ # key constraints in SQL ......
 
-  **convert in uppercase**
+   1. key constraints are used to provide a limitation on a  tables 
+   2. key constraints are ...
+
+      1. primary key 
+      2. unique key 
+      3. foreign key  
+
+# primary key :
+ 
+  1. A pk key never return a null values 
+  2. A pk key always have an auto_increments 
+  3. A pk will provides only one times in tables
+  4. A pk stored a unique values 
+
+**create table with pk**
 
   ```
-  select ucase(name) from tbl_reviews
-  or
-
-  ```
-
-# lcase :convert any column name of data in lowercase 
-
- **convert in lowercase**
-
-  ```
-  select lcase(name) from tbl_reviews
-  ```
-# like operator : searching rows or data from tables using like operator
-
-1. searching data from tables using keyword like operator is used
-2. like operator is denoted by % symbol 
-3. like is used to search via character word pattern 
+create table reviews
+(
+reviewsid int primary key AUTO_INCREMENT,
+name varchar(155),
+email varchar(255),
+ratings ENUM('1 star','2 star','3 star','4 star','5 star'),
+phone bigint,
+comment text    
+    
+ );
 
 ```
-select * from tbl_reviews where name like 'r%';
-select * from tbl_reviews where name like 'n%';
-select * from tbl_reviews where name like '%h';
-select * from tbl_reviews where name like '%a%';
-select * from tbl_reviews where name like 'a%h';
+
+**create in md formate**
+
+# Reviews Table Structure
+
+| Column Name | Data Type | Size / Values | Constraints |
+|------------|-----------|---------------|-------------|
+| reviewsid | INT | - | PRIMARY KEY, AUTO_INCREMENT |
+| name | VARCHAR | 155 | NULL Allowed |
+| email | VARCHAR | 255 | NULL Allowed |
+| ratings | ENUM | '1 star', '2 star', '3 star', '4 star', '5 star' | NULL Allowed |
+| phone | BIGINT | - | NULL Allowed |
+| comment | TEXT | Large Text | NULL Allowed |
+
+
+# unique key :
+ 
+  1. A uk key return one times a null value   
+  2. A uk will provides many times in a tables on columns
+  3. A uk stored a unique values
+  4. A uk never stored an dublicate values in tables 
+  
+**create table with uk**
+
+  ```
+ALTER TABLE `flip_register` ADD UNIQUE(`email`);
+or
+ALTER TABLE `flip_register` ADD UNIQUE(`phone`);
 ```
+  
+**note : here email and phone are unique key set and it is never stored a dublicate values**  
 
-# pattern word rules in like operator
+# foreign key :
+    
+  1. A fk will provides many times in a tables on columns with common field or column
+  3. A fk are used to provides an relationship b/w one table to another table
+  4. A fk can stored an dublicate key with common field
 
-| Pattern | Meaning | Example Match |
-|---|---|---|
-| `'a%'` | Starts with "a" | `"apple"`, `"alpha"` |
-| `'%a'` | Ends with "a" | `"banana"`, `"data"` |
-| `'%or%'` | Contains "or" in any position | `"world"`, `"orbit"` |
-| `'_r%'` | Has "r" in the second position | `"tree"`, `"area"` |
-| `'a__%'` | Starts with "a" and is at least 3 chars long | `"apple"`, `"and"` |
-| `'a%o'` | Starts with "a" and ends with "o" | `"audio"`, `"alto"` |
+**create table with fk**
+
+# create a flip_country table
+
+  ```
+  create table flip_country
+ (
+ cid int AUTO_INCREMENT primary key,
+ countryname varchar(255)    
+ )
+  ```
+
+# create a flip_users table 
+
+```
+create table flip_users
+(
+uid int AUTO_INCREMENT primary key,
+name varchar(255),
+email varchar(255),
+phone bigint,
+cid int REFERENCES flip_country(cid)    
+)
+
+```
+# create an tables with foreign key ....
+
+# ecommerce managements
+
+1. flip_category
+2. flip_subcategory
+3. flip_products 
+
+# students managements 
+
+1. flip_courses
+2. flip_faculty
+3. flip_students
+
+# task managements 
+
+1. flip_priority
+3. flip_employee 
+2. flip_task
 
 
-
-# key constraints in SQL ........
-
-1. key constraints in SQL ...
-2. key constraints in SQL set limit on tables 
-3. key constraints is ........
-
-   1. primary key 
-   2. unique key 
-   3. foreign key 
+# SQL join .....
 
 
-**note:key constraints is also used to normalized tables data**    
