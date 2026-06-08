@@ -707,13 +707,13 @@ ALTER TABLE `flip_register` ADD UNIQUE(`phone`);
 
 # create a flip_country table
 
-  ```
-  create table flip_country
- (
- cid int AUTO_INCREMENT primary key,
- countryname varchar(255)    
- )
-  ```
+```
+create table flip_country
+(
+cid int AUTO_INCREMENT primary key,
+countryname varchar(255)    
+)
+ ```
 
 # create a flip_users table 
 
@@ -732,15 +732,77 @@ cid int REFERENCES flip_country(cid)
 
 # ecommerce managements
 
+# create an database flipkart_shop
+
 1. flip_category
 2. flip_subcategory
 3. flip_products 
+4. flip_customers
+5. flip_cart
+6. flip_orders
 
-# students managements 
+# examples:
+```
+1. create database flipkart_shop
+2.create table flip_category
+(
+ catid int AUTO_INCREMENT primary key,
+ categoryname varchar(255)   
+)
+3.create table flip_subcategory
+(
+ pid int AUTO_INCREMENT primary key,   
+ catid int REFERENCES flip_category(catid),
+ subcategoryname varchar(255)
+) 
+4.create table flip_products
+(
+ pid int AUTO_INCREMENT primary key,   
+ catid int REFERENCES flip_category(catid),
+ subcatid int REFERENCES flip_subcategory(subcatid),
+ pname varchar(255),
+ qty int,
+ oldprice int,
+ photo blob,   
+ offerprice int,
+ descriptions text   
+)  
 
-1. flip_courses
-2. flip_faculty
-3. flip_students
+5. create table flip_customers
+(
+custid int primary key AUTO_INCREMENT,
+name varchar(255),
+email varchar(255),
+password varchar(255),
+address text,
+phone bigint    
+
+)
+
+6. create email as unique key 
+
+alter table flip_customers add unique(`email`)
+
+7. create table flip_cart
+(
+cartid int AUTO_INCREMENT primary key,
+pid int REFERENCES flip_products(pid),
+custid int REFERENCES flip_customers(custid),
+qty int, 
+price int, 
+suntotal int, 
+added_date varchar(255)    
+
+)
+
+
+```
+
+# students managements  systems
+
+1. courses
+2. faculty
+3. students
 
 # task managements 
 
@@ -749,6 +811,133 @@ cid int REFERENCES flip_country(cid)
 2. flip_task
 
 
+# ecommerce related tables normalisations ...
+
+1. create table categories
+(
+catid int AUTO_INCREMENT primary key,
+catname varchar(255)
+)
+
+2. create table subcategories
+(
+subcatid int AUTO_INCREMENT primary key,
+subcatname varchar(255)
+)
+
+3. create table flip_products
+(
+ pid int AUTO_INCREMENT primary key,   
+ catid int REFERENCES flip_category(catid),
+ subcatid int REFERENCES flip_subcategory(subcatid),
+ pname varchar(255),
+ qty int,
+ oldprice int,
+ photo blob,   
+ offerprice int,
+ descriptions text   
+) 
+
+
+# students managements systems database normalisations 
+
+1. priority
+2. employee
+3. task 
+
+
 # SQL join .....
+
+  join ...
+
+  # join is used to join more than once table with common field if data matched from one table to another table its join 
+
+
+   1. join 
+
+
+    ```
+    select products.*,catname,subcatname from products join categories on products.catid=categories.catid join subcategories on products.subcatid=subcategories.subcatid;
+    or
+
+    select pid, photo,pname, offerprice, descriptions, added_date_time, catname,subcatname from products join categories on products.catid=categories.catid join subcategories on products.subcatid=subcategories.subcatid;
+    or
+
+    select task.*, pname,name from task join priority on task.prid=priority.prid join employee on task.empid=employee.empid
+
+
+    or
+
+    select taskid, title, added_date,pname,name from task join priority on task.prid=priority.prid join employee on task.empid=employee.empid 
+  
+    ```
+ 
+# students managements  systems
+
+1.create table course
+(
+courseid int AUTO_INCREMENT primary key,
+coursename varchar(255)    
+) 
+2. create table faculty
+(
+facultyid int AUTO_INCREMENT primary key,
+facultyname varchar(255)    
+) 
+3.create table students
+(
+sudentid int AUTO_INCREMENT primary key,
+name varchar(255),
+age int, 
+address text,
+enrollment int,
+courseid int REFERENCES course(courseid),
+facultyid int REFERENCES faculty(facultyid)
+) 
+
+
+# Query 
+
+ 1. select coursename only bfrom table course
+ 2. select facultyname as staffname from table faculty
+ 3. select students table with coursename and facultyname 
+ 4. select coursename all in uppercase 
+
+# solutions    
+
+
+ ```
+ select coursename from course;
+ or
+ select ucase(coursename) from course;
+ or
+ select facultyname as staffname from faculty;
+ or
+ select ucase(facultyname) as staffname from faculty;
+ or
+ select sudentid,name,age,address,coursename,facultyname from students join course on students.courseid=course.courseid join faculty on students.facultyid=faculty.facaltyid
+
+ ```
+
+ # user managements systems 
+
+  1. country 
+  2. state 
+  3. city 
+  4. users 
+
+
+
+  # question 
+
+  1. select only country name from country table in uppercase 
+  2. select only state name from state table in uppercase 
+  3. select only cityname name from city table in uppercase 
+  4. select uid,uname,salary,countryname,statename,cityname from users (apply join in users table  to get all name of country , state and city)
+
+
+  ## Note : create users table wth normalisation and provides cid, sid and ctid as foreign key 
+
+
 
 
