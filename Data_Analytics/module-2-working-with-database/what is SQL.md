@@ -4,76 +4,76 @@ SQL (Structured Query Language) is a standardized programming language used for 
 
 ## Characteristics of SQL
 
- 1. SQL is a structured query language 
- 2. SQL is structured query based language 
- 3. SQL is used to create a database and tables structured
- 4. SQL will manage and provides relationship between tables  
- 5. SQL is case-insensitive language
- 6. SQL is most commonly used to create an structured database
+1. SQL is a structured query language 
+2. SQL is structured query based language 
+3. SQL is used to create a database and tables structured
+4. SQL will manage and provides relationship between tables  
+5. SQL is case-insensitive language
+6. SQL is most commonly used to create an structured database
 
 ## Advantages of SQL
 
- 1. **Easy to Learn** - SQL has a simple and intuitive syntax that resembles English, making it easy for beginners to learn
+1. **Easy to Learn** - SQL has a simple and intuitive syntax that resembles English, making it easy for beginners to learn
 
- 2. **Portability** - SQL works across different platforms and database systems (MySQL, PostgreSQL, Oracle, SQL Server, etc.)
- 
- 3. **High Performance** - SQL efficiently handles large volumes of data and performs complex queries quickly
- 
- 4. **Data Security** - SQL provides authentication and authorization mechanisms to protect sensitive data
- 
- 5. **ACID Compliance** - SQL supports transactions with ACID properties (Atomicity, Consistency, Isolation, Durability)
- 
- 6. **Data Integrity** - SQL enforces referential integrity and constraints to maintain data consistency
- 
- 7. **Standardized Language** - SQL follows standardized syntax across most relational database systems
- 
- 8. **Scalability** - SQL databases can handle growing volumes of data without performance degradation
- 
- 9. **Flexibility** - SQL supports complex queries and multiple data retrieval methods 
+2. **Portability** - SQL works across different platforms and database systems (MySQL, PostgreSQL, Oracle, SQL Server, etc.)
+
+3. **High Performance** - SQL efficiently handles large volumes of data and performs complex queries quickly
+
+4. **Data Security** - SQL provides authentication and authorization mechanisms to protect sensitive data
+
+5. **ACID Compliance** - SQL supports transactions with ACID properties (Atomicity, Consistency, Isolation, Durability)
+
+6. **Data Integrity** - SQL enforces referential integrity and constraints to maintain data consistency
+
+7. **Standardized Language** - SQL follows standardized syntax across most relational database systems
+
+8. **Scalability** - SQL databases can handle growing volumes of data without performance degradation
+
+9. **Flexibility** - SQL supports complex queries and multiple data retrieval methods 
 
 
 # SQL commands or query 
 
-  1. SQL provides some query or commands 
-  2. SQL is case - insenstive 
-     examples : INSERT | insert | Insert
-  3. best way to write query in small case 
+1. SQL provides some query or commands 
+2. SQL is case - insenstive 
+examples : INSERT | insert | Insert
+3. best way to write query in small case 
 
-  **types of SQL query**
+**types of SQL query**
 
-  1. DDL (data definition language)
-  2. DML (data manipulation language)
-  3. DQL (data query language)
-  4. TCL (Transactional query language)
- 
+1. DDL (data definition language)
+2. DML (data manipulation language)
+3. DQL (data query language)
+4. TCL (Transactional query language)
 
- # mysql start database 
 
-   1. xampp is a server tools 
-      
-      X -cross plateform(support all OS)
-      A -apache (server)
-      M -MySQL (database)
-      P -Perl
-      P -php
+# mysql start database 
 
-      **how to download xampp**
+1. xampp is a server tools 
 
-      ```
-      https://www.apachefriends.org/ 
+X -cross plateform(support all OS)
+A -apache (server)
+M -MySQL (database)
+P -Perl
+P -php
 
-      ``` 
+**how to download xampp**
 
-      ![alt text](image.png)
-      
-      localhost/phpmyadmin
+```
+https://www.apachefriends.org/ 
+
+``` 
+
+![alt text](image.png)
+
+localhost/phpmyadmin
 
 
 
 # 2. mySQLworkBench2.0
 
-      MySQLworkbench is also used for mysql database 
-      MySQLworkbench is also used to create database | tables create 
+MySQLworkbench is also used for mysql database 
+MySQLworkbench is also used to create database | tables create 
 
 
 **download and start**  
@@ -85,32 +85,32 @@ https://dev.mysql.com/downloads/file/?id=552199
 
 # DDL (data definition language)
 
-  1. DDL is used to create a database and table structured 
-  2. DDL is also used to add | modify | rename any column name of table.
-  3. DDL also drop and truncate a structures 
-  4. DDL is also used to change the columnname of table 
+1. DDL is used to create a database and table structured 
+2. DDL is also used to add | modify | rename any column name of table.
+3. DDL also drop and truncate a structures 
+4. DDL is also used to change the columnname of table 
 
 
-  **examples of DDL**
+**examples of DDL**
 
-  1. create 
-  2. alter 
-  3. rename 
-  4. drop 
-  5. change
-  6. truncate   
+1. create 
+2. alter 
+3. rename 
+4. drop 
+5. change
+6. truncate   
 
 **How to create a database structured**
 
- **syntax**
+**syntax**
 
- ```
- create database databasename;
- or
- create database flipkart_shop;
+```
+create database databasename;
+or
+create database flipkart_shop;
 
- ```
-  
+```
+
 **How to create a table structures**
 
 **chart of table to create fieldname and datatype and its size in SQL**
@@ -139,13 +139,13 @@ https://dev.mysql.com/downloads/file/?id=552199
 ```
 create table tablename
 (
-  columnname1 datatype(size) auto_increment primary key,
-  columnname2 datatype(size),
-  .
-  .
-  .
-  .
-  .
+columnname1 datatype(size) auto_increment primary key,
+columnname2 datatype(size),
+.
+.
+.
+.
+.
 )
 ```
 
@@ -162,7 +162,7 @@ password varchar(255),
 email varchar(255),
 phone bigint,
 address text    
-    
+
 );
 
 ```
@@ -178,7 +178,7 @@ email varchar(255),
 subject ENUM('24x7 customer support','return product','customer care numbers'),
 phone bigint,
 message text    
-    
+
 );
 
 ```
@@ -194,7 +194,7 @@ email varchar(255),
 ratings ENUM('1 star','2 star','3 star','4 star','5 star'),
 phone bigint,
 comment text    
-    
+
 );
 ```
 
@@ -225,77 +225,77 @@ comment text
 
 # SQL Create Table Query
 
- ```
- CREATE TABLE products (
-    product_id INT PRIMARY KEY AUTO_INCREMENT,
-    product_name VARCHAR(150) NOT NULL,
-    product_code VARCHAR(50) UNIQUE,
-    category_id INT,
-    brand_name VARCHAR(100),
-    price DECIMAL(10,2) NOT NULL,
-    stock_quantity INT DEFAULT 0,
-    weight DECIMAL(8,2),
-    color VARCHAR(50),
-    size VARCHAR(20),
-    description TEXT,
-    image_url VARCHAR(255),
-    is_active BOOLEAN DEFAULT TRUE,
-    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
-  );
+```
+CREATE TABLE products (
+product_id INT PRIMARY KEY AUTO_INCREMENT,
+product_name VARCHAR(150) NOT NULL,
+product_code VARCHAR(50) UNIQUE,
+category_id INT,
+brand_name VARCHAR(100),
+price DECIMAL(10,2) NOT NULL,
+stock_quantity INT DEFAULT 0,
+weight DECIMAL(8,2),
+color VARCHAR(50),
+size VARCHAR(20),
+description TEXT,
+image_url VARCHAR(255),
+is_active BOOLEAN DEFAULT TRUE,
+created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
 
 ```
 
 # alter 
-  1. alter is used to add new columns in tables
-  2. alter is used to modify or change  columns name in tables
-  3. alter is used to drop  columns name in tables
+1. alter is used to add new columns in tables
+2. alter is used to modify or change  columns name in tables
+3. alter is used to drop  columns name in tables
 
- ```
-  alter is used to add | modify | update | drop a columns from table 
-  
-  1. alter table employee add added_date date;
-  2. alter table employee add is_Active boolean DEFAULT TRUE;
-  3. alter table employee add photo blob after email;
-  4. alter table employee CHANGE name employeename varchar(255)
-  5. alter table employee drop photo;
+```
+alter is used to add | modify | update | drop a columns from table 
 
- ```
+1. alter table employee add added_date date;
+2. alter table employee add is_Active boolean DEFAULT TRUE;
+3. alter table employee add photo blob after email;
+4. alter table employee CHANGE name employeename varchar(255)
+5. alter table employee drop photo;
+
+```
 
 
 # rename : after create tables we rename the tables name
 
-  ```
-  rename table reviews to flip_reviews
+```
+rename table reviews to flip_reviews
 
-  ```
+```
 
 
 # drop : is drop database and tables both after drop we can not rollback anything 
 
-  **drop database**
+**drop database**
 
-  ```
- 
-   drop database databasename;
-   
-   or
+```
 
-   drop database flipkart_shop
- 
-  ```
+drop database databasename;
 
-  **drop table**
+or
 
-  ```
- 
-   drop table tablename;
-   
-   or
+drop database flipkart_shop
 
-   drop table flip_contact
- 
-  ```
+```
+
+**drop table**
+
+```
+
+drop table tablename;
+
+or
+
+drop table flip_contact
+
+```
 
 
 **truncate**
@@ -338,143 +338,143 @@ alter table tbl_employee change password employee_password varchar(255);
 
 # what is DML ....  Data manipulation language
 
-  1. stands for data manipulation language 
-  2. DML used to manipulate data meanse insert | delete | update data in tables 
-  3. DML data 
+1. stands for data manipulation language 
+2. DML used to manipulate data meanse insert | delete | update data in tables 
+3. DML data 
 
-     a. insert 
-     b. delete 
-     c. update 
+a. insert 
+b. delete 
+c. update 
 
 **how to insert a single or multiple data in tables**
 
 1. insert a single row in table
 
-   ```
-   syntax :
+```
+syntax :
 
-   insert into tablename(columnname1, columnname2) values ('value1','value2');
-   or
+insert into tablename(columnname1, columnname2) values ('value1','value2');
+or
 
-   insert into tbl_reviews(name,email,phone,rating,comment,added_date) values ('om','om@gmail.com',91212121,'5 star','good i am glad to here','19-05-2026') 
+insert into tbl_reviews(name,email,phone,rating,comment,added_date) values ('om','om@gmail.com',91212121,'5 star','good i am glad to here','19-05-2026') 
 
-   ```
+```
 
 
-   2. insert a multiple rows in table
+2. insert a multiple rows in table
 
-   ```
-   syntax :
+```
+syntax :
 
-   insert into tablename(columnname1, columnname2) values ('value1','value2'),('value1','value2'),('value1','value2');
-   or
-   
-   insert into tbl_reviews(name,email,phone,rating,comment,added_date) values ('amish','amish@gmail.com',91212178,'5 star','good i am glad to here','2026-05-19'),('kirtan','kirtan@gmail.com',93212178,'5 star','good i am glad to here','2026-05-19'),('mahesh','mahesh@gmail.com',95212178,'5 star','good i am glad to here','2026-05-19') 
+insert into tablename(columnname1, columnname2) values ('value1','value2'),('value1','value2'),('value1','value2');
+or
 
-   or
+insert into tbl_reviews(name,email,phone,rating,comment,added_date) values ('amish','amish@gmail.com',91212178,'5 star','good i am glad to here','2026-05-19'),('kirtan','kirtan@gmail.com',93212178,'5 star','good i am glad to here','2026-05-19'),('mahesh','mahesh@gmail.com',95212178,'5 star','good i am glad to here','2026-05-19') 
 
-  insert into tbl_reviews values('null','naimish','naimish@gmail.com',91212178,'5 star','good i am glad to here','2026-05-19'),('null','ritesh','ritesh@gmail.com',93212178,'5 star','good i am glad to here','2026-05-19'),('null','kumar','kumar@gmail.com',95212178,'5 star','good i am glad to here','2026-05-19')
+or
 
-   ```
+insert into tbl_reviews values('null','naimish','naimish@gmail.com',91212178,'5 star','good i am glad to here','2026-05-19'),('null','ritesh','ritesh@gmail.com',93212178,'5 star','good i am glad to here','2026-05-19'),('null','kumar','kumar@gmail.com',95212178,'5 star','good i am glad to here','2026-05-19')
+
+```
 
 # how to delete data 
 
-  1. delete data is used to delete a data 
-  2. delete is also used to delete a particular one rows 
-  3. delete is also used to delete with its columnname 
-  4. delete is also used to delete a range of data 
-  5. delete is also used to delete alternate data 
+1. delete data is used to delete a data 
+2. delete is also used to delete a particular one rows 
+3. delete is also used to delete with its columnname 
+4. delete is also used to delete a range of data 
+5. delete is also used to delete alternate data 
 
- **examples of delete**
+**examples of delete**
 
-  ```
-  delete from tablename
-  or 
-  delete from tbl_reviews
-  or 
-  delete from tbl_reviews where id=5;
-  or
-  delete from tbl_reviews where name='om';
-  or
-  delete from tbl_reviews where id between 5 and 10;
-  or
-  delete from tbl_reviews where id in(12,14,16,19)
-  ```   
+```
+delete from tablename
+or 
+delete from tbl_reviews
+or 
+delete from tbl_reviews where id=5;
+or
+delete from tbl_reviews where name='om';
+or
+delete from tbl_reviews where id between 5 and 10;
+or
+delete from tbl_reviews where id in(12,14,16,19)
+```   
 
 # how to delete data or rows 
 
-  1. update a rows ...
+1. update a rows ...
 
-  ```
-   update tablename set colunname='value' where id;
-   or
-   update tbl_reviews set name='om',email='om007@gmail.com',phone=635898956,rating='5star',comment='good to see you',added_date='2026-05-21' where id=17;
-   or
-   update tbl_reviews set name='om',email='om007@gmail.com',phone=635898956,rating='5star',comment='good to see you',added_date='2026-05-21' where id=17;
+```
+update tablename set colunname='value' where id;
+or
+update tbl_reviews set name='om',email='om007@gmail.com',phone=635898956,rating='5star',comment='good to see you',added_date='2026-05-21' where id=17;
+or
+update tbl_reviews set name='om',email='om007@gmail.com',phone=635898956,rating='5star',comment='good to see you',added_date='2026-05-21' where id=17;
 
-   or
+or
 
-   update tbl_reviews set email='bkpandey.pandey@gmail.com' where id=1;
+update tbl_reviews set email='bkpandey.pandey@gmail.com' where id=1;
 
-   or
+or
 
-   update tbl_reviews set email='bkpandey.pandey@gmail.com' where id=1;
+update tbl_reviews set email='bkpandey.pandey@gmail.com' where id=1;
 
-   or
+or
 
-   update tbl_reviews set email='mukeshdhandhukiya007@gmail.com' where name='mukesh';   
+update tbl_reviews set email='mukeshdhandhukiya007@gmail.com' where name='mukesh';   
 
-  ```
-  # DQL ..stands for data query language 
+```
+# DQL ..stands for data query language 
 
-  1. DQL stands data query language 
-  2. DQL is used to select or fetch data 
-  3. DQL is only used select query or command
+1. DQL stands data query language 
+2. DQL is used to select or fetch data 
+3. DQL is only used select query or command
 
-  **select examples**
+**select examples**
 
-  ```
-  select * from tbl_reviews;
-  or
-  select * from tbl_reviews id=1;
-  or
-  select * from tbl_reviews where id=1;
-  or
-  select * from tbl_reviews where between 18 and 25;
-  or
-  select * from tbl_reviews where id in(13,17,20);
-  or
-  select id,name,email,phone from tbl_reviews;
-  or
-  select * from tbl_reviews where id limit 1,6;
- 
- 
-  ```
-
-  **order by and group by**
+```
+select * from tbl_reviews;
+or
+select * from tbl_reviews id=1;
+or
+select * from tbl_reviews where id=1;
+or
+select * from tbl_reviews where between 18 and 25;
+or
+select * from tbl_reviews where id in(13,17,20);
+or
+select id,name,email,phone from tbl_reviews;
+or
+select * from tbl_reviews where id limit 1,6;
 
 
- # order by :
+```
 
-   1. order by filter data from tables in ascending or descending order
-   2. order by is used to sort data in ascending or descending order
+**order by and group by**
 
-    **syntax**
-  
-    ```
-    select * from tablename order by columnname asc;
-    or
-    select * from tablename order by columnname desc;
 
-    examples :
-    select * from flip_reviews order by name asc;
-    or
-    select * from flip_reviews order by name desc;
-    or
-    select * from flip_reviews order by id desc;
-    or
-    select * from flip_reviews order by id asc;
-    ```
+# order by :
+
+1. order by filter data from tables in ascending or descending order
+2. order by is used to sort data in ascending or descending order
+
+**syntax**
+
+```
+select * from tablename order by columnname asc;
+or
+select * from tablename order by columnname desc;
+
+examples :
+select * from flip_reviews order by name asc;
+or
+select * from flip_reviews order by name desc;
+or
+select * from flip_reviews order by id desc;
+or
+select * from flip_reviews order by id asc;
+```
 
 SQL function :
 
@@ -485,174 +485,174 @@ SQL function :
 
 1. aggregate function
 
-   1. sum(): returns the total sum of a numeric column
+1. sum(): returns the total sum of a numeric column
 
-      examples : select sum(salary) from flip_employee;
-                 or
-                 select sum(salary) as sumofsalary_ofemployee from flip_employee;  
+examples : select sum(salary) from flip_employee;
+or
+select sum(salary) as sumofsalary_ofemployee from flip_employee;  
 
-  **as is used to give alias name to columnname or table name**
+**as is used to give alias name to columnname or table name**
 
-   2. avg(): returns the average value of a numeric column
+2. avg(): returns the average value of a numeric column
 
-      examples : select avg(salary) from flip_employee;
-                 or
-                 select avg(salary) as avgsalary_ofemployee from flip_employee;
+examples : select avg(salary) from flip_employee;
+or
+select avg(salary) as avgsalary_ofemployee from flip_employee;
 
-   3. count(): returns the number of rows that match a specified condition
+3. count(): returns the number of rows that match a specified condition
 
-      examples : select count(*) from flip_employee;
-                 or
-                 select count(*) as totalemployee from flip_employee;
-                 or
-                 select count(salary) from flip_employee where salary>16000;
+examples : select count(*) from flip_employee;
+or
+select count(*) as totalemployee from flip_employee;
+or
+select count(salary) from flip_employee where salary>16000;
 
-   4. max(): returns the maximum value of a column
-      examples : select max(salary) from flip_employee;
-                 or
-                 select max(salary) as maxsalary_ofemployee from flip_employee;
-    
-   5. min(): returns the minimum value of a column
+4. max(): returns the maximum value of a column
+examples : select max(salary) from flip_employee;
+or
+select max(salary) as maxsalary_ofemployee from flip_employee;
 
-      examples : select min(salary) from flip_employee;
-                 or
-                 select min(salary) as minsalary_ofemployee from flip_employee;
+5. min(): returns the minimum value of a column
+
+examples : select min(salary) from flip_employee;
+or
+select min(salary) as minsalary_ofemployee from flip_employee;
 
 
-  **note : aggregate function is used to perform some operations on data and return a single value**
+**note : aggregate function is used to perform some operations on data and return a single value**
 
 
 
 2. scalar function
 
 
-   1. firstname() : returns the first name of a person
-   2. lastname() : returns the last name of a person
-   3. length() : returns the length of a string
-   4. upper() : returns the string in uppercase
-   5. lower() : returns the string in lowercase
-   6. round() : rounds a numeric field to the number of decimals specified
-   7. now() : returns the current date and time
+1. firstname() : returns the first name of a person
+2. lastname() : returns the last name of a person
+3. length() : returns the length of a string
+4. upper() : returns the string in uppercase
+5. lower() : returns the string in lowercase
+6. round() : rounds a numeric field to the number of decimals specified
+7. now() : returns the current date and time
 
 
-  examples : select firstname(employeename) from flip_employee;
-             or
-             select lastname(employeename) from flip_employee;
-             or
-             select length(employeename) from flip_employee;
-             or
-             select ucase(name) from flip_employee;
-             or
-             select lcase(emplyeename) from flip_employee;
-             or
-             select round(salary,2) from flip_employee;
-             or
-             select now() from dual;
+examples : select firstname(employeename) from flip_employee;
+or
+select lastname(employeename) from flip_employee;
+or
+select length(employeename) from flip_employee;
+or
+select ucase(name) from flip_employee;
+or
+select lcase(emplyeename) from flip_employee;
+or
+select round(salary,2) from flip_employee;
+or
+select now() from dual;
 
-  **note : scalar function is used to perform some operations on data and return a single value**
+**note : scalar function is used to perform some operations on data and return a single value**
 
-  firstname() and lastname() function is used to return the first name and last name of a person from a full name column not supported in mysql but supported in sql server and oracle database
+firstname() and lastname() function is used to return the first name and last name of a person from a full name column not supported in mysql but supported in sql server and oracle database
 
 
 # group by 
 
- 1. group by is used to group data based on a column
- 2. group by is used to group data based on a column and perform aggregate functions like
+1. group by is used to group data based on a column
+2. group by is used to group data based on a column and perform aggregate functions like
 
-  - count
-  - sum
-  - avg
-  - max
-  - min
+- count
+- sum
+- avg
+- max
+- min
 
-  **syntax**
-  
-  ```
-   select sum(salary) from flip_employee group by department;
-   or
-   select department, sum(salary) from flip_employee group by department;
-   or
-   select sum(salary),department from flip_employee GROUP by department;
-   or
-   select sum(salary) as totalsalary,department from flip_employee GROUP by department;
+**syntax**
 
-  ```
+```
+select sum(salary) from flip_employee group by department;
+or
+select department, sum(salary) from flip_employee group by department;
+or
+select sum(salary),department from flip_employee GROUP by department;
+or
+select sum(salary) as totalsalary,department from flip_employee GROUP by department;
 
- # w.a.q to find second highest salary from employee table
-  
-  **subquery**
-  
-  1. query within another query is called subquery
-  2. subquery is used to find second highest salary from employee table
+```
 
-  ```
-  select max(salary) from flip_employee where salary < (select max(salary) from flip_employee);   
-  or
-  select salary from flip_employee order by salary desc limit 1,1;
-  or
-  select salary from flip_employee order by salary desc limit 2,1;
-  
-  ```
+# w.a.q to find second highest salary from employee table
+
+**subquery**
+
+1. query within another query is called subquery
+2. subquery is used to find second highest salary from employee table
+
+```
+select max(salary) from flip_employee where salary < (select max(salary) from flip_employee);   
+or
+select salary from flip_employee order by salary desc limit 1,1;
+or
+select salary from flip_employee order by salary desc limit 2,1;
+
+```
 # like operator 
 
-  1. like operator is used to search for a specified pattern in a column
-  2. like operator is used to search for a specified pattern in a column using wildcards
-  
-  **wildcards**
-  
-  1. % : represents zero or more characters
-  2. _ : represents a single character
-  3. [ ] : represents any single character within the brackets
-  4. [^] : represents any single character not within the brackets
-  5. - : represents a range of characters
-  6. | : represents an OR condition
-  7. \ : escape character
-  8. ^ : represents the start of a string
-  9. $ : represents the end of a string
-  10. () : groups a series of conditions
-  
-  **syntax**
-  
-  ```
-  select * from tablename where columnname like 'pattern';
-  or
-  select * from flip_employee where employeename like 'a%'
-  or
-  select * from flip_employee where employeename like '%v'
-  or
-  select * from flip_employee where employeename like '%a%'
-  or
-  select * from flip_employee where employeename like '_a%'
-  or
-  select * from flip_employee where employeename like 'a_%';
-  or
-  select * from flip_employee where employeename like 'a__%';
-  or
-  select * from flip_employee where employeename like '%bri%'
-  or
-  select * from flip_employee where employeename like '%or%'
-  
-  ```
+1. like operator is used to search for a specified pattern in a column
+2. like operator is used to search for a specified pattern in a column using wildcards
 
- # key constraints in SQL ......
+**wildcards**
 
-   1. key constraints are used to provide a limitation on a  tables 
-   2. key constraints are ...
+1. % : represents zero or more characters
+2. _ : represents a single character
+3. [ ] : represents any single character within the brackets
+4. [^] : represents any single character not within the brackets
+5. - : represents a range of characters
+6. | : represents an OR condition
+7. \ : escape character
+8. ^ : represents the start of a string
+9. $ : represents the end of a string
+10. () : groups a series of conditions
 
-      1. primary key 
-      2. unique key 
-      3. foreign key  
+**syntax**
+
+```
+select * from tablename where columnname like 'pattern';
+or
+select * from flip_employee where employeename like 'a%'
+or
+select * from flip_employee where employeename like '%v'
+or
+select * from flip_employee where employeename like '%a%'
+or
+select * from flip_employee where employeename like '_a%'
+or
+select * from flip_employee where employeename like 'a_%';
+or
+select * from flip_employee where employeename like 'a__%';
+or
+select * from flip_employee where employeename like '%bri%'
+or
+select * from flip_employee where employeename like '%or%'
+
+```
+
+# key constraints in SQL ......
+
+1. key constraints are used to provide a limitation on a  tables 
+2. key constraints are ...
+
+1. primary key 
+2. unique key 
+3. foreign key  
 
 # primary key :
- 
-  1. A pk key never return a null values 
-  2. A pk key always have an auto_increments 
-  3. A pk will provides only one times in tables
-  4. A pk stored a unique values 
+
+1. A pk key never return a null values 
+2. A pk key always have an auto_increments 
+3. A pk will provides only one times in tables
+4. A pk stored a unique values 
 
 **create table with pk**
 
-  ```
+```
 create table reviews
 (
 reviewsid int primary key AUTO_INCREMENT,
@@ -661,8 +661,8 @@ email varchar(255),
 ratings ENUM('1 star','2 star','3 star','4 star','5 star'),
 phone bigint,
 comment text    
-    
- );
+
+);
 
 ```
 
@@ -681,27 +681,27 @@ comment text
 
 
 # unique key :
- 
-  1. A uk key return one times a null value   
-  2. A uk will provides many times in a tables on columns
-  3. A uk stored a unique values
-  4. A uk never stored an dublicate values in tables 
-  
+
+1. A uk key return one times a null value   
+2. A uk will provides many times in a tables on columns
+3. A uk stored a unique values
+4. A uk never stored an dublicate values in tables 
+
 **create table with uk**
 
-  ```
+```
 ALTER TABLE `flip_register` ADD UNIQUE(`email`);
 or
 ALTER TABLE `flip_register` ADD UNIQUE(`phone`);
 ```
-  
+
 **note : here email and phone are unique key set and it is never stored a dublicate values**  
 
 # foreign key :
-    
-  1. A fk will provides many times in a tables on columns with common field or column
-  3. A fk are used to provides an relationship b/w one table to another table
-  4. A fk can stored an dublicate key with common field
+
+1. A fk will provides many times in a tables on columns with common field or column
+3. A fk are used to provides an relationship b/w one table to another table
+4. A fk can stored an dublicate key with common field
 
 **create table with fk**
 
@@ -713,7 +713,7 @@ create table flip_country
 cid int AUTO_INCREMENT primary key,
 countryname varchar(255)    
 )
- ```
+```
 
 # create a flip_users table 
 
@@ -746,26 +746,26 @@ cid int REFERENCES flip_country(cid)
 1. create database flipkart_shop
 2.create table flip_category
 (
- catid int AUTO_INCREMENT primary key,
- categoryname varchar(255)   
+catid int AUTO_INCREMENT primary key,
+categoryname varchar(255)   
 )
 3.create table flip_subcategory
 (
- pid int AUTO_INCREMENT primary key,   
- catid int REFERENCES flip_category(catid),
- subcategoryname varchar(255)
+pid int AUTO_INCREMENT primary key,   
+catid int REFERENCES flip_category(catid),
+subcategoryname varchar(255)
 ) 
 4.create table flip_products
 (
- pid int AUTO_INCREMENT primary key,   
- catid int REFERENCES flip_category(catid),
- subcatid int REFERENCES flip_subcategory(subcatid),
- pname varchar(255),
- qty int,
- oldprice int,
- photo blob,   
- offerprice int,
- descriptions text   
+pid int AUTO_INCREMENT primary key,   
+catid int REFERENCES flip_category(catid),
+subcatid int REFERENCES flip_subcategory(subcatid),
+pname varchar(255),
+qty int,
+oldprice int,
+photo blob,   
+offerprice int,
+descriptions text   
 )  
 
 5. create table flip_customers
@@ -792,12 +792,8 @@ qty int,
 price int, 
 suntotal int, 
 added_date varchar(255)    
-
 )
-
-
 ```
-
 # students managements  systems
 
 1. courses
@@ -827,15 +823,15 @@ subcatname varchar(255)
 
 3. create table flip_products
 (
- pid int AUTO_INCREMENT primary key,   
- catid int REFERENCES flip_category(catid),
- subcatid int REFERENCES flip_subcategory(subcatid),
- pname varchar(255),
- qty int,
- oldprice int,
- photo blob,   
- offerprice int,
- descriptions text   
+pid int AUTO_INCREMENT primary key,   
+catid int REFERENCES flip_category(catid),
+subcatid int REFERENCES flip_subcategory(subcatid),
+pname varchar(255),
+qty int,
+oldprice int,
+photo blob,   
+offerprice int,
+descriptions text   
 ) 
 
 
@@ -848,30 +844,30 @@ subcatname varchar(255)
 
 # SQL join .....
 
-  join ...
+join ...
 
-  # join is used to join more than once table with common field if data matched from one table to another table its join 
-
-
-   1. join 
+# join is used to join more than once table with common field if data matched from one table to another table its join 
 
 
-    ```
-    select products.*,catname,subcatname from products join categories on products.catid=categories.catid join subcategories on products.subcatid=subcategories.subcatid;
-    or
-
-    select pid, photo,pname, offerprice, descriptions, added_date_time, catname,subcatname from products join categories on products.catid=categories.catid join subcategories on products.subcatid=subcategories.subcatid;
-    or
-
-    select task.*, pname,name from task join priority on task.prid=priority.prid join employee on task.empid=employee.empid
+1. join 
 
 
-    or
+```
+select products.*,catname,subcatname from products join categories on products.catid=categories.catid join subcategories on products.subcatid=subcategories.subcatid;
+or
 
-    select taskid, title, added_date,pname,name from task join priority on task.prid=priority.prid join employee on task.empid=employee.empid 
-  
-    ```
- 
+select pid, photo,pname, offerprice, descriptions, added_date_time, catname,subcatname from products join categories on products.catid=categories.catid join subcategories on products.subcatid=subcategories.subcatid;
+or
+
+select task.*, pname,name from task join priority on task.prid=priority.prid join employee on task.empid=employee.empid
+
+
+or
+
+select taskid, title, added_date,pname,name from task join priority on task.prid=priority.prid join employee on task.empid=employee.empid 
+
+```
+
 # students managements  systems
 
 1.create table course
@@ -898,46 +894,196 @@ facultyid int REFERENCES faculty(facultyid)
 
 # Query 
 
- 1. select coursename only bfrom table course
- 2. select facultyname as staffname from table faculty
- 3. select students table with coursename and facultyname 
- 4. select coursename all in uppercase 
+1. select coursename only bfrom table course
+2. select facultyname as staffname from table faculty
+3. select students table with coursename and facultyname 
+4. select coursename all in uppercase 
 
 # solutions    
 
 
- ```
- select coursename from course;
- or
- select ucase(coursename) from course;
- or
- select facultyname as staffname from faculty;
- or
- select ucase(facultyname) as staffname from faculty;
- or
- select sudentid,name,age,address,coursename,facultyname from students join course on students.courseid=course.courseid join faculty on students.facultyid=faculty.facaltyid
+```
+select coursename from course;
+or
+select ucase(coursename) from course;
+or
+select facultyname as staffname from faculty;
+or
+select ucase(facultyname) as staffname from faculty;
+or
+select sudentid,name,age,address,coursename,facultyname from students join course on students.courseid=course.courseid join faculty on students.facultyid=faculty.facaltyid
 
- ```
+```
 
- # user managements systems 
+# user managements systems 
 
-  1. country 
-  2. state 
-  3. city 
-  4. users 
-
-
-
-  # question 
-
-  1. select only country name from country table in uppercase 
-  2. select only state name from state table in uppercase 
-  3. select only cityname name from city table in uppercase 
-  4. select uid,uname,salary,countryname,statename,cityname from users (apply join in users table  to get all name of country , state and city)
-
-
-  ## Note : create users table wth normalisation and provides cid, sid and ctid as foreign key 
+1. country 
+2. state 
+3. city 
+4. users 
 
 
 
+# question 
 
+1. select only country name from country table in uppercase 
+2. select only state name from state table in uppercase 
+3. select only cityname name from city table in uppercase 
+4. select uid,uname,salary,countryname,statename,cityname from users (apply join in users table  to get all name of country , state and city)
+
+
+## Note : create users table wth normalisation and provides cid, sid and ctid as foreign key 
+
+# Types of join ...
+
+**There are 4 types of join**
+
+1. join 
+2. inner join 
+3. outer join 
+1. left join 
+2. right join 
+3. full join 
+4. cross join   
+
+# what is join ?
+
+1. join is used to join more than one column data with common filed if data matched one table to another tables 
+
+**department**
+
+|depid(pk)|   depname |
+|-------- |-----------|
+|  1      |   IT      |
+|  2      |   CSE     |
+|  3      |   HR      |
+|  4      |   Finance |
+|  5      |   Bank    |
+
+**employee**
+
+| empid  | empname | age  | salary | depid(fk) |
+|--------|---------|------|--------|-----------| 
+|  1     | forum   | 21   | 15500  |  1        | 
+|  2     | faiz   | 20   | 18500  |  1        | 
+|  3     | manan   | 22   | 125500  |  1        | 
+|  4     | ashtha   | 23   | 115500  |  2        | 
+|  5     | brijesh   | 35   | 17500  |  1        | 
+|  6     | pranav   | 22   | 16500  |  2       |   
+
+
+# Question : write a query to create departments tables and insert 4 rows or data
+# Question : write a query to fetch only depname in uppercase or lowercase
+# Question : write a query to fetch only depname in decending order 
+# Question : write a query to fetch employee details who's salary is second highest
+# Question : write a query to fetch only details of empid 3,5,2 employee details 
+# Question : write a query to fetch only employee details who's name start with 'f' character
+# Question : write a query to fetch deprtmentname inside of employee tables with join query 
+
+
+# Answer .....
+
+1. create table flip_department
+(
+depid int primary key AUTO_INCREMENT,
+depname varchar(255)    
+
+)
+2. insert into flip_department(depname) values('IT'),('CSE'),('HR'),('BANK') 
+
+3. select lcase(depname) from flip_department
+
+4. select * from flip_department order by depname desc;
+
+5. create table flip_employee
+(
+empid int primary key AUTO_INCREMENT,
+depid int REFERENCES flip_department(depid),
+name varchar(255),
+age int,
+phone bigint,
+salary float,
+added_date date
+
+)
+
+6. select * from flip_employee order by salary desc limit 1,1;
+7. select flip_employee.*,depname from flip_employee join flip_department on flip_employee.depid=flip_department.depid;
+
+8. select empid,name,age,phone,salary,depname from flip_employee join flip_department on flip_employee.depid=flip_department.depid order by salary desc limit 1,1;
+
+9. select empid,name,age,phone,salary,depname from flip_employee join flip_department on flip_employee.depid=flip_department.depid order by salary desc limit 0,1;
+
+10. select * from flip_employee where empid in(3,5,2);
+
+11. select * from flip_employee where empid between 3 and 6;
+
+12. select * from flip_employee where name like 'f%';
+
+13.  select flip_employee.*,depname from flip_employee join flip_department on flip_employee.depid=flip_department.depid;
+
+
+
+# task based query 
+
+# Part 1: The Environment Setup
+
+# Run this script in your SQL editor to create the sandbox.
+**SQL**
+
+CREATE TABLE Users (
+user_id INT PRIMARY KEY,
+name VARCHAR(100),
+email VARCHAR(100),
+signup_date DATE,
+country VARCHAR(50)
+);
+CREATE TABLE Products (
+product_id INT PRIMARY KEY,
+name VARCHAR(100),
+category VARCHAR(50),
+price DECIMAL(10,2),
+stock_count INT
+);
+CREATE TABLE Orders (
+order_id INT PRIMARY KEY,
+user_id INT,
+order_date DATE,
+status VARCHAR(20),
+FOREIGN KEY (user_id) REFERENCES Users(user_id)
+);
+
+CREATE TABLE Order_Items (
+item_id INT PRIMARY KEY,
+order_id INT,
+product_id INT,
+quantity INT,
+unit_price DECIMAL(10,2),
+FOREIGN KEY (order_id) REFERENCES Orders(order_id),
+FOREIGN KEY (product_id) REFERENCES Products(product_id)
+);
+
+Part 2: The 100 Questions (2-Hour Timer)
+
+The Basics (Questions 1–20)
+
+1. Select all columns from the Users table.
+2. List the names of all products in the 'Electronics' category.
+3. Find all users who signed up in 2023.
+4. List products with a price greater than $500.
+5. Find all orders with a 'Pending' status.
+6. Select the email of the user with user_id 10.
+7. List all unique countries in the Users table.
+8. Find products where the name starts with 'S'.
+9. Get the top 5 most expensive products.
+10. Find all orders placed in January 2024.
+11. List users whose name contains 'John'.
+12. Find products with stock_count between 10 and 50.
+13. Get all orders from users in 'USA'.
+14. List products sorted by price (lowest to highest).
+15. Count the total number of users.
+16. Find all products that are NOT in the 'Clothing' category.
+17. List orders sorted by order_date descending.
+18. Find users who signed up before 2022.
+19. Get the names of products that cost exactly $99.99.
+20. Show the first 10 rows of the Order_Items table.
