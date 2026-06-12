@@ -525,7 +525,6 @@ select min(salary) as minsalary_ofemployee from flip_employee;
 
 2. scalar function
 
-
 1. firstname() : returns the first name of a person
 2. lastname() : returns the last name of a person
 3. length() : returns the length of a string
@@ -941,9 +940,9 @@ select sudentid,name,age,address,coursename,facultyname from students join cours
 1. join 
 2. inner join 
 3. outer join 
-1. left join 
-2. right join 
-3. full join 
+   1. left join 
+   2. right join 
+   3. full join 
 4. cross join   
 
 # what is join ?
@@ -970,6 +969,58 @@ select sudentid,name,age,address,coursename,facultyname from students join cours
 |  4     | ashtha   | 23   | 115500  |  2        | 
 |  5     | brijesh   | 35   | 17500  |  1        | 
 |  6     | pranav   | 22   | 16500  |  2       |   
+
+
+
+# inner join :
+
+ 1. inner join is same as join if data matched from one tables to another tables it will be join otherwise return null values 
+
+```
+select  flip_employee.*,depname  from flip_employee inner join  flip_department on flip_employee.depid=flip_department.depid; 
+
+```
+
+
+# outer join 
+
+   1. left join : 
+
+     left join are used to join first table of left rows to second table of left rows if data matched join all data other wise return null values.
+
+     ```
+      select  flip_employee.*,depname  from flip_employee left join  flip_department on flip_employee.depid=flip_department.depid;
+      
+     ```
+
+    2. right join : 
+
+     right join are used to join second table of right rows to first table of right rows if data matched join all data otherwise return null values.
+
+     ```
+      select  flip_employee.*,depname  from flip_employee right join  flip_department on flip_employee.depid=flip_department.depid;
+      
+     ```
+
+
+    3. full join : left join + right join 
+
+    # mysql is not supported  
+   
+   
+# cross join :
+
+   cross join are used to join one tables of data with another tables with cross of numbers of total data..
+
+   examples :  select * from flip_employee cross join flip_department
+
+  # note : finance company or markeiting company chain marketing
+
+                    A 
+              B     C                  D               E        
+      F        E     G     I     J    F E G I J       F E G I J        F E G I J
+ F E G I J     F E G I J   F E G I J   F E G I J   F E G I J   F E G I J  F E G I J
+
 
 
 # Question : write a query to create departments tables and insert 4 rows or data
@@ -1087,3 +1138,150 @@ The Basics (Questions 1–20)
 18. Find users who signed up before 2022.
 19. Get the names of products that cost exactly $99.99.
 20. Show the first 10 rows of the Order_Items table.
+
+
+
+# SQL Normalizations 
+
+  1. SQL normalisation is used to removed redundancy of data format
+  2. SQL normalisation is used to removed dublicacy data formate there we used normalisation 
+  3. types of normalisation 
+
+     1) 1 NF 
+     2) 2 NF 
+     3) 3 NF
+     4) 4 NF
+     5) 5 NF 
+
+1. 1 NF : 1st NF is only descrived any tables with primary key and auto_increments
+
+ **examples**
+
+|depid(pk)|   depname |
+|-------- |-----------|
+|  1      |   IT      |
+|  2      |   CSE     |
+|  3      |   HR      |
+|  4      |   Finance |
+|  5      |   Bank    |            
+
+
+2. 2 NF : 2ND NF is  used to create 2 tables and provides relationship between them i.e called 2nd NF form with foreign key.
+
+ **examples**
+
+ **departments**
+
+|depid(pk)|   depname |
+|-------- |-----------|
+|  1      |   IT      |
+|  2      |   CSE     |
+|  3      |   HR      |
+|  4      |   Finance |
+|  5      |   Bank    |            
+
+
+ **employee**
+
+| empid  | empname | age  | salary | depid(fk) |
+|--------|---------|------|--------|-----------| 
+|  1     | forum   | 21   | 15500  |     1     | 
+|  2     | faiz   | 20   | 18500   |     1     | 
+|  3     | manan   | 22   | 125500 |     1     | 
+|  4     | ashtha   | 23   | 115500|     2     | 
+|  5     | brijesh   | 35   | 17500|     1     | 
+|  6     | pranav   | 22   | 16500 |     2     |   
+
+
+3. 3rd NF : 
+
+  create 5 tables and normalised via pk | fk | uk and give relationship with all i.e called 3rd normalisation 
+
+
+  **examples**
+
+  **category**
+
+  catid         catname 
+
+  **subcategory**
+
+  subcatid   catid   subcatname
+
+  **products**
+
+  pid catid subcatid  pname qty  price desc status 
+
+  **customers**
+
+  custid   name   age    address   status 
+
+  **cart**
+
+  cartid pid  catid  subcatid   custid   subtotal   status   added_date
+
+
+# what is view in SQL ? 
+
+  1. view is used to create for any tables 
+  2. view is used to create a dublicate tables or virtual tables 
+  3. view is create a clone of our  original tables 
+  4. view is used to create to hide some data from some users so we can create views of that tables 
+  
+  syntax :  
+
+      ```
+       create view viewname as select  columnname1 , columnname2 , columnname3 from tblname where id=1
+
+       or 
+
+       create view flip_employee_view as select empid, name , age , salary, added_date from flip_employee where empid=3;
+
+      ```      
+   # note :   
+
+     1. we can also insert | delete | update and alter any data from original tables  its also effects on its virtuals  tables 
+
+     2. insert into flip_employee_view (name,age,salary,added_date) values('kumar',32,45500,'2026-06-12')
+
+     3. delete from flip_employee_view where empid=7;
+
+     4. delete from flip_employee where empid=3;
+         
+
+  # what is index in SQL ? 
+
+    1. SQL index  is used to create for improved the speed or performance of tables there we create an index or indexer 
+
+    2.SQL indexer create on single columns or multiples columns of tables 
+
+    3. SQL indexer create multiple columns composite indexer 
+
+    4. if we create only one columns an indexer its create a sigle indexer 
+
+    5. indexer is used to improved performance or speed or fast lookup data from tables so we can create an indexer of table.
+
+# syntax of create indexer ...
+
+  ```
+ create index indexname on tablename (columnname1, columnname1, columname2....)
+ or
+ create index flip_index_employee on flip_employee (empid, name, age, phone)
+  ```
+# TCL ....
+
+ 1. trasnactional control language 
+ 2. TCL is used to commit | rolback | save point data after delete from tables 
+ 3. TCL is based to support in oracle database 
+
+   **types of query in TCL**
+
+   1. save point 
+   2. commit 
+   3. rollback  
+
+
+
+  # task based query ................
+  
+   
