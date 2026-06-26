@@ -92,7 +92,7 @@
 
      examples : >, >=, <, <=, ===  etc
      
-  3. assignments  operator 
+  3. assingments  operator 
 
      where we compare and assign two values and check condition there we applied assignment operator      
 
@@ -114,7 +114,13 @@
 
       examples : +=, -= , *= , %= , /=, >> , <<
    
+ 
+   7. increment/decrement operator
 
+      examples :i=i+1
+                i=i-1
+
+     **note: python not support pre increment/decrement**
 
 # variable in python ? 
 
@@ -122,10 +128,12 @@
 
    ``` 
     A variable is used to stored an information of data i.e called variables 
-       
+    or
+    A variable is just like container where we stored an information of data i.e called variables
+
    ```
 
-   **how to call variables or initialized variables**
+   **how to  initialized variables**
 
    ```
    a=10
@@ -153,4 +161,56 @@
  ['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
 
 ```
-     
+
+# what is print() in python  ?
+
+  1. print is a simple inbuild function in python
+  2. print used to print any variables data
+  3. print never return multiple values 
+  4. print always return single values
+
+   ``` 
+   name='brijesh kumar pandey'
+   print(name)
+
+   ```
+
+# print name take input from users (dynamic print)
+
+ 1. input() is an inbuilt method of python 
+ 2. input() is used to print name take input from users
+ 
+ ```
+name=input("Enter your name :")
+print("My name is :",name)
+
+ ```
+
+# what is data types of variables ?
+
+  **data types**
+
+  ```
+  A data types is which type of data stored in variables i.e called data type of variables.
+  ```
+
+# types of data type in python 
+
+  1. integer 
+  2. string
+  3. float
+  4. boolean 
+  5. null
+  6. undefined
+  7. tuple
+  8. dictionary 
+  9. list 
+
+# check a data  types of any variables ?
+   a=10
+   b=10.256
+   c="brijesh"
+   d=True
+   e=False
+   **note: type() is a method that can be check datatype**
+

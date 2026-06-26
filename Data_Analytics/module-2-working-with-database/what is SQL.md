@@ -1339,9 +1339,7 @@ INSERT INTO `flipkart_db`.`customers` (`id`, `name`, `password`, `mobile`, `addr
 2. SQL windows functions are used to add or set a rows related to the current row without grouping the result into a single row 
 
 
-
-# types of function of windows 
-
+# types of  windows functions 
 
 1. ROW_NUMBER()
 
@@ -1388,7 +1386,7 @@ select name , salary , ROW_NUMBER() OVER(order by salary desc) from flip_employe
 select name, salary, RANK() OVER(order by salary desc) as rank_no from employee;  
 ```
 
-4. provides ranking without gaps for dublicate values 
+4. DENSE_RANK() : provides ranking without gaps for dublicate values 
 
 ```
 select name, salary, DENSE_RANK() OVER(order by salary desc) as rank_no from employee;
@@ -1417,7 +1415,7 @@ select name, salary , LEAD(salary, 1) OVER(order by salary desc) as prevoius_sal
 8. FIRST_VALUES() : return first values in windows 
 
 ```
-select name, salary , FIRST_VALUE(salary) OVER(order by salary desc) as prevoius_salary from flip_employee; 
+select name, salary , FIRST_VALUE(salary) OVER(order by salary desc) as first_max_salary from flip_employee; 
 ``` 
 
 
@@ -1467,8 +1465,8 @@ select name, salary , COUNT(empid) OVER(order by empid) as COUNT_EMPLOYEE from f
 
 # SQL WITH Clause
 
-The SQL WITH clause (Common Table Expression or CTE) defines a temporary result set that can be used within a query. It simplifies complex SQL statements, making them easier to read, manage and reuse. 
-
+1. The SQL WITH clause (Common Table Expression or CTE) defines a temporary result set that can be used within a query. 
+2. It simplifies complex SQL statements, making them easier to read, manage and reuse. 
 
 ```
 WITH AvgSalaryCTE (averageValue) AS (
