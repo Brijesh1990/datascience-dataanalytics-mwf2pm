@@ -150,7 +150,7 @@ what is block statements or conditional statements
 
 #w.a.p to create a simple calculator to perform additions while user press 1, and press 2 substractions , press 3 multiplcations and 4 divisions if press 5 proggrame exit
 
-print("########select choice #########")
+print("######## select choice #########")
 print("press 1 for additions")
 print("press 2 for substractions")
 print("press 3 for multiplications")
