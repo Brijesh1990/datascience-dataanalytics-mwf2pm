@@ -28,3 +28,25 @@
     statements
   call a function 
   ```
+
+# types of function 
+
+   There are two types of function 
+   1. user defined function 
+   2. pre-defined function 
+
+   ***user defined function**
+   def faiz():
+      nm="my name is faiz"
+      print(nm)
+
+  ***pre defined function**
+    
+    name='brijesh'
+    res=name.upper()
+    print(res)
+
+    
+    name='brijesh'
+    res=name.captalize()
+    print(res)
