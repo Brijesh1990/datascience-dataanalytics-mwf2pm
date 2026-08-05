@@ -12,5 +12,5 @@
 # read excel content workbook of particular sheet
 
 import pandas as pd 
-df=pd.read_excel("workbook1.xlsx", sheet_name="attendanace")
+df=pd.read_excel("workbook1.xlsx", sheet_name="category")
 print(df)
