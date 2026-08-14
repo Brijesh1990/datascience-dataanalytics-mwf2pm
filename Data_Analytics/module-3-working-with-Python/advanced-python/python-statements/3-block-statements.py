@@ -157,6 +157,84 @@
 # switch not support in python    
 
 
+# looping statements ?  
+
+"""
+loop statements  ? 
+ loop is executed or repeated number od iteration again and again there we used loop
+ 
+ or 
+ 
+ loop is executed or print numbers of iteration again and again i.e called loop 
+ 
+ types of loop in python ? 
+ 
+  1. for()
+  2. while() 
+  3. do while()
+  
+
+"""
+ 
+# for loop : for loop is executed when condition is true if false for loop is terminated 
+
+# syntax 
+# for variable in range():
+#     statments
+
+# print 1 to 100...
+
+# for num in range(1,101):
+#     print(num , end=" ")
+
+# for num in range(1,101):
+#     print(num, end="\n")
+ 
+ 
+#  while : while loop is executed when condition is true 
+
+# i=0
+# while(i<=10):
+#     print(i, end=" ")
+#     i+=1; # i++ ; i=i+1 
+      
+      
+# i=1
+# while(i<=10):
+#     print(i, end="\n")
+#     i+=1; # i++ ; i=i+1
+
+
+
+# i=10
+# while(i>=1):
+#     print(i, end="\n")
+#     i-=1; # i-- ; i=i-1 
+
+
+# do while : do will be executed once time either condition is true or false while executed when condition is true
+# i=0
+# do 
+# {
+#  print(i)
+#  i+=1    
+# }
+# while(i<=10)
+
+# note : do while is not supported in python
+
+
+# control flow statements : 
+# continue 
+# break 
+# pass
+# yield 
+ 
+# 1 to 9   
+for i in (1,10):
+         if i==3: 
+            
+ 
 
 
 
