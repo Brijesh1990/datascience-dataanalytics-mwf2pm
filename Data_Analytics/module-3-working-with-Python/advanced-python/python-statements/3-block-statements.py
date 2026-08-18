@@ -231,8 +231,8 @@ loop statements  ?
 # yield 
  
 # 1 to 9   
-for i in (1,10):
-         if i==3: 
+# for i in (1,10):
+#          if i==3: 
             
  
 
