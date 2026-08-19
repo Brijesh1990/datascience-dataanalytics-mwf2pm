@@ -236,5 +236,76 @@ loop statements  ?
             
  
 
+# while loop :
+# 1. while loop is executed when condition is true there we used while loop
+# 2. while loop used numbers of iteration repeated whenever condition is not false
+
+# syntax 
+
+# while condition:
+#   statements
+#   increment/decrement
+
+# i=0
+# while i>0:
+#   print(i, end="\n")
+#   i+=1
+
+
+
+# i=0
+# while i<=10:
+#   print(i, end="\n")
+#   i+=1
+
+
+# do while : do will be executed one times either condition is true or false if condition is true while will be executed
+
+# i=0
+# do:
+#   print(i,end="\n")
+#   i+=1 
+# while i<=10
+
+# note : python not supported do while 
+
+
+# control flow statements : 
+# control flow statements used break | continue | return | yield
+# control flow statements is used to control the flow of iteration  
+
+# break : break is used to break or terminate the loop 
+
+# for variable in range:
+#   statements
+
+# for i in range(0,10):
+#   print(i, end="\n")
+  
+  
+# for i in range(0,10):
+#   if i==5:
+#     break
+#   print(i, end="\n")
+    
+    
+
+# for i in range(0,10):
+#   if i==5:
+#     continue
+#   print(i, end="\n")
+    
+    
+# for i in range(0,10):
+#   if i==5 or i==8:
+#     continue
+#   print(i, end="\n")
+    
+    
+# def display(a,b):
+#   return a+b # terminate the function in its body 
+# print(display(10,20))
+
+ 
 
 
