@@ -1,3 +1,0 @@
-
- tuple provides is immutable objects
- tuple is an data types used in python

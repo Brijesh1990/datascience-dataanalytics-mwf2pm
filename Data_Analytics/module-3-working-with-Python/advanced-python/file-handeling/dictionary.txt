@@ -1,3 +1,0 @@
-
- Dictionary provides is mutable objects
- Dictionary is an data types used in python

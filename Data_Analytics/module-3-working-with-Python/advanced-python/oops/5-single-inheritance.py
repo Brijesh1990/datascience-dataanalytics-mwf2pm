@@ -27,6 +27,7 @@ call the method
 """
 
 class A: 
+    # constructor
     def __init__(self,name):
         self.name=name
         
@@ -37,5 +38,6 @@ class B(A):
                 
         
 obj=B("Brijesh","150 feet ring road rajkot")
+print(obj)
 print(obj.name)
 print(obj.address)
