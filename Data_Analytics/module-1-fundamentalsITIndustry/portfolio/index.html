@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brijesh Kumar Pandey - Data Analyst Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="config.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-gray-100">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-slate-900/95 backdrop-blur-md z-50 border-b border-slate-700">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center font-bold text-white">
+                        BKP
+                    </div>
+                    <span class="text-xl font-bold hidden sm:inline bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Brijesh Pandey</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover-link">Home</a>
+                    <a href="#about" class="hover-link">About</a>
+                    <a href="#tools" class="hover-link">Tools</a>
+                    <a href="#experience" class="hover-link">Experience</a>
+                    <a href="#education" class="hover-link">Education</a>
+                    <a href="#contact" class="hover-link">Contact</a>
+                </div>
+                <button id="menuBtn" class="md:hidden text-2xl cursor-pointer">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-slate-800 border-t border-slate-700">
+            <a href="#home" class="block px-4 py-2 hover:bg-slate-700">Home</a>
+            <a href="#about" class="block px-4 py-2 hover:bg-slate-700">About</a>
+            <a href="#tools" class="block px-4 py-2 hover:bg-slate-700">Tools</a>
+            <a href="#experience" class="block px-4 py-2 hover:bg-slate-700">Experience</a>
+            <a href="#education" class="block px-4 py-2 hover:bg-slate-700">Education</a>
+            <a href="#contact" class="block px-4 py-2 hover:bg-slate-700">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl w-full grid md:grid-cols-2 gap-8 items-center">
+            <div class="fade-in-left">
+                <h1 class="text-5xl sm:text-6xl font-bold mb-6">
+                    Hi, I'm <br><span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Brijesh Pandey</span>
+                </h1>
+                <h2 class="text-2xl sm:text-3xl text-gray-400 mb-6">Data Analyst & Business Intelligence Professional</h2>
+                <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+                    I transform complex data into actionable insights using advanced analytics, visualization, and statistical modeling. 
+                    Passionate about helping businesses make data-driven decisions.
+                </p>
+                <div class="flex flex-wrap gap-4 mb-8">
+                    <a href="#contact" class="btn-primary">Get In Touch</a>
+                    <a href="#about" class="btn-secondary">Learn More</a>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-envelope"></i></a>
+                </div>
+            </div>
+           <div class="fade-in-right hidden  md:block">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-2xl blur-3xl opacity-20 animate-pulse"></div>
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/048/216/761/small/modern-male-avatar-with-black-hair-and-hoodie-illustration-free-png.png" alt="Brijesh Kumar Pandey" class="relative w-full rounded-2xl shadow-2xl object-cover h-96">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4 text-center">About Me</h2>
+            <div class="h-1 w-24 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mb-12"></div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="fade-in-up">
+                    <p class="text-gray-300 text-lg mb-6 leading-relaxed">
+                        With over 5+ years of experience in data analytics and business intelligence, I help organizations 
+                        unlock the power of their data. My expertise spans data analysis, visualization, statistical modeling, 
+                        and database management.
+                    </p>
+                    <p class="text-gray-300 text-lg mb-6 leading-relaxed">
+                        I'm proficient in Python, SQL, and advanced Excel, with hands-on experience in building dashboards, 
+                        creating data pipelines, and presenting insights to stakeholders.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="stat-box">
+                            <div class="text-3xl font-bold text-cyan-400">50+</div>
+                            <div class="text-gray-400">Projects Completed</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="text-3xl font-bold text-cyan-400">30+</div>
+                            <div class="text-gray-400">Clients Served</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="text-3xl font-bold text-cyan-400">5+</div>
+                            <div class="text-gray-400">Years Experience</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="text-3xl font-bold text-cyan-400">100%</div>
+                            <div class="text-gray-400">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-in-up delay-200">
+                    <img src="https://cdni.iconscout.com/illustration/free/thumb/free-about-us-illustration-svg-download-png-1740019.png" alt="About" class="w-full rounded-2xl shadow-2xl object-cover h-96">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools & Skills Section -->
+    <section id="tools" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4 text-center">Tools & Technologies</h2>
+            <div class="h-1 w-24 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mb-12"></div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Data Analysis Tools -->
+                <div class="fade-in-up">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-database text-cyan-400 mr-3"></i>Data Analysis Tools
+                    </h3>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="tool-card">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold">Python (Pandas, NumPy, SciPy)</h4>
+                                <span class="text-cyan-400 font-bold">95%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-2 rounded-full skill-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold">SQL & Database Management</h4>
+                                <span class="text-cyan-400 font-bold">92%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-2 rounded-full skill-bar" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold">Excel (Advanced)</h4>
+                                <span class="text-cyan-400 font-bold">90%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-2 rounded-full skill-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold">R Programming</h4>
+                                <span class="text-cyan-400 font-bold">85%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-2 rounded-full skill-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visualization & BI Tools -->
+                <div class="fade-in-up delay-200">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-chart-line text-blue-400 mr-3"></i>Visualization & BI Tools
+                    </h3>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="tool-card">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold">Power BI</h4>
+                                <span class="text-cyan-400 font-bold">93%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-2 rounded-full skill-bar" style="width: 93%"></div>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold">Tableau</h4>
+                                <span class="text-cyan-400 font-bold">90%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-2 rounded-full skill-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold">Matplotlib & Seaborn</h4>
+                                <span class="text-cyan-400 font-bold">88%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-2 rounded-full skill-bar" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold">Google Analytics & Looker</h4>
+                                <span class="text-cyan-400 font-bold">87%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-2 rounded-full skill-bar" style="width: 87%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Statistical & Advanced Skills -->
+                <div class="fade-in-up delay-300">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-calculator text-purple-400 mr-3"></i>Statistical & Advanced Skills
+                    </h3>
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="tool-card">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold">Statistical Analysis</h4>
+                                <span class="text-cyan-400 font-bold">91%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-2 rounded-full skill-bar" style="width: 91%"></div>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold">Machine Learning Basics</h4>
+                                <span class="text-cyan-400 font-bold">82%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-2 rounded-full skill-bar" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold">Data Pipeline Development</h4>
+                                <span class="text-cyan-400 font-bold">88%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-2 rounded-full skill-bar" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="flex items-center justify-between mb-2">
+                                <h4 class="font-semibold">Cloud Platforms (AWS, Azure)</h4>
+                                <span class="text-cyan-400 font-bold">80%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-cyan-400 to-blue-500 h-2 rounded-full skill-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Tools -->
+                <div class="fade-in-up delay-400">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-tools text-green-400 mr-3"></i>Other Tools & Platforms
+                    </h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="tool-box">
+                            <i class="fas fa-database text-cyan-400 text-2xl mb-2"></i>
+                            <h4>MySQL/PostgreSQL</h4>
+                        </div>
+                        <div class="tool-box">
+                            <i class="fas fa-file-csv text-green-400 text-2xl mb-2"></i>
+                            <h4>ETL Process</h4>
+                        </div>
+                        <div class="tool-box">
+                            <i class="fab fa-git text-orange-400 text-2xl mb-2"></i>
+                            <h4>Git & GitHub</h4>
+                        </div>
+                        <div class="tool-box">
+                            <i class="fas fa-docker text-blue-400 text-2xl mb-2"></i>
+                            <h4>Docker</h4>
+                        </div>
+                        <div class="tool-box">
+                            <i class="fas fa-chart-bar text-purple-400 text-2xl mb-2"></i>
+                            <h4>Statistics</h4>
+                        </div>
+                        <div class="tool-box">
+                            <i class="fas fa-brain text-red-400 text-2xl mb-2"></i>
+                            <h4>ML Algorithms</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4 text-center">Professional Experience</h2>
+            <div class="h-1 w-24 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mb-12"></div>
+            
+            <div class="space-y-8">
+                <!-- Experience 1 -->
+                <div class="fade-in-up experience-card">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-cyan-400">Senior Data Analyst</h3>
+                            <p class="text-gray-400">Tech Solutions Inc., New York</p>
+                        </div>
+                        <span class="text-blue-400 font-semibold">Jan 2022 - Present</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Leading data analytics initiatives for a 500+ employee organization</p>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start"><i class="fas fa-arrow-right text-cyan-400 mr-3 mt-1"></i>
+                            <span>Developed 20+ interactive Power BI dashboards that improved decision-making efficiency by 40%</span>
+                        </li>
+                        <li class="flex items-start"><i class="fas fa-arrow-right text-cyan-400 mr-3 mt-1"></i>
+                            <span>Optimized SQL queries reducing data processing time by 60% and improving system performance</span>
+                        </li>
+                        <li class="flex items-start"><i class="fas fa-arrow-right text-cyan-400 mr-3 mt-1"></i>
+                            <span>Managed data pipelines handling 10+ million records daily using Python and ETL tools</span>
+                        </li>
+                        <li class="flex items-start"><i class="fas fa-arrow-right text-cyan-400 mr-3 mt-1"></i>
+                            <span>Mentored junior analysts and established best practices for data analysis and reporting</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="fade-in-up experience-card delay-200">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-cyan-400">Data Analyst</h3>
+                            <p class="text-gray-400">Analytics Corp, Boston</p>
+                        </div>
+                        <span class="text-blue-400 font-semibold">Jun 2019 - Dec 2021</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Analyzed business data to drive strategic insights and improve performance metrics</p>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start"><i class="fas fa-arrow-right text-cyan-400 mr-3 mt-1"></i>
+                            <span>Created 15+ Tableau visualizations for C-level executives resulting in data-driven strategies</span>
+                        </li>
+                        <li class="flex items-start"><i class="fas fa-arrow-right text-cyan-400 mr-3 mt-1"></i>
+                            <span>Performed statistical analysis on customer behavior data identifying growth opportunities</span>
+                        </li>
+                        <li class="flex items-start"><i class="fas fa-arrow-right text-cyan-400 mr-3 mt-1"></i>
+                            <span>Implemented automated reporting solutions saving 20 hours per week of manual work</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="fade-in-up experience-card delay-300">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-cyan-400">Junior Data Analyst</h3>
+                            <p class="text-gray-400">DataMiners LLC, Philadelphia</p>
+                        </div>
+                        <span class="text-blue-400 font-semibold">Mar 2018 - May 2019</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Started my data analytics career working on diverse projects and learning industry best practices</p>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start"><i class="fas fa-arrow-right text-cyan-400 mr-3 mt-1"></i>
+                            <span>Analyzed sales and marketing data using SQL and Excel producing actionable insights</span>
+                        </li>
+                        <li class="flex items-start"><i class="fas fa-arrow-right text-cyan-400 mr-3 mt-1"></i>
+                            <span>Collaborated with cross-functional teams to define data requirements and metrics</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4 text-center">Education & Certifications</h2>
+            <div class="h-1 w-24 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mb-12"></div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Education -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-cyan-400">Education</h3>
+                    <div class="space-y-6">
+                        <div class="fade-in-up education-card">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
+                                    <i class="fas fa-graduation-cap text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold">Master of Science in Data Science</h4>
+                                    <p class="text-gray-400">University of Technology, 2017</p>
+                                    <p class="text-gray-300 text-sm mt-2">GPA: 3.8/4.0 - Specialized in Statistical Analysis and ML</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fade-in-up education-card delay-200">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
+                                    <i class="fas fa-graduation-cap text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold">Bachelor of Science in Statistics</h4>
+                                    <p class="text-gray-400">State University, 2015</p>
+                                    <p class="text-gray-300 text-sm mt-2">GPA: 3.7/4.0 - Dean's List all semesters</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 text-blue-400">Certifications</h3>
+                    <div class="space-y-4">
+                        <div class="fade-in-up cert-badge">
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-yellow-400 text-2xl mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold">Microsoft Power BI Data Analyst</h4>
+                                    <p class="text-gray-400 text-sm">Certified 2023</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fade-in-up cert-badge delay-200">
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-yellow-400 text-2xl mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold">Tableau Desktop Specialist</h4>
+                                    <p class="text-gray-400 text-sm">Certified 2022</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fade-in-up cert-badge delay-300">
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-yellow-400 text-2xl mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold">Google Data Analytics Professional</h4>
+                                    <p class="text-gray-400 text-sm">Certified 2021</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fade-in-up cert-badge delay-400">
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-yellow-400 text-2xl mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold">AWS Certified Cloud Practitioner</h4>
+                                    <p class="text-gray-400 text-sm">Certified 2022</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fade-in-up cert-badge delay-500">
+                            <div class="flex items-center">
+                                <i class="fas fa-certificate text-yellow-400 text-2xl mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold">Python for Data Analysis (DataCamp)</h4>
+                                    <p class="text-gray-400 text-sm">Certified 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold mb-4 text-center">Get In Touch</h2>
+            <div class="h-1 w-24 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto mb-12"></div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="fade-in-up">
+                    <h3 class="text-2xl font-bold mb-6">Let's Connect</h3>
+                    <p class="text-gray-300 mb-8">
+                        I'm always interested in hearing about new projects and opportunities. Feel free to reach out through any of the following channels.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <p class="text-gray-400">brijesh.pandey@email.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Phone</h4>
+                                <p class="text-gray-400">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Location</h4>
+                                <p class="text-gray-400">New York, USA</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 flex space-x-4">
+                        <a href="#" class="social-icon-large"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon-large"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon-large"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon-large"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="fade-in-up delay-200">
+                    <form id="contactForm" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Full Name</label>
+                            <input type="text" required class="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400 transition" placeholder="Your name">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Email Address</label>
+                            <input type="email" required class="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400 transition" placeholder="your.email@example.com">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Subject</label>
+                            <input type="text" required class="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400 transition" placeholder="How can I help?">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Message</label>
+                            <textarea rows="5" required class="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400 transition" placeholder="Your message here..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full btn-primary py-3 font-semibold">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-700 py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Brijesh Kumar Pandey</h4>
+                    <p class="text-gray-400">Data Analyst & Business Intelligence Professional</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#about" class="hover:text-cyan-400 transition">About</a></li>
+                        <li><a href="#tools" class="hover:text-cyan-400 transition">Skills</a></li>
+                        <li><a href="#experience" class="hover:text-cyan-400 transition">Experience</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Follow</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Brijesh Kumar Pandey. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
