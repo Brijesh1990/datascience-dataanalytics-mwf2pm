@@ -1,7 +1,7 @@
 # create a database connection 
 import pandas as pd
 import numpy as np
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import openpyxl as xl
 import sqlite3
 # connect database 
@@ -66,13 +66,28 @@ print('-------------------------------------------------------------')
 total_salary=df["salary"].sum()
 print("Total sum of salary :",total_salary)
 
-
 print('-------------------------------------------------------------')
-
 # find the Total average salary 
 avg_salary=df["salary"].mean()
 print("Total average of salary :",avg_salary)
 
+# find who is getting max salary 
+print('-------------------------------------------------------------')
+# find the highest salary 
+highest_salary_name=df.loc[df["salary"].idxmax(), ["name", "salary"]]
+print("Find Highest salary Name :",highest_salary_name)
+
+# data visualization in chart
+plt.title("max salary get employee details")
+plt.pie(
+    df["salary"],
+    labels=df["name"],
+    colors=["red","green","yellow"],
+    autopct="%1.1f%%"
+)
+
+# display chart
+plt.show()
 
 # close the connection
 conn.close()

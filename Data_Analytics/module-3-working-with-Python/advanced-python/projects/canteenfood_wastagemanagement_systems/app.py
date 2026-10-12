@@ -6,7 +6,6 @@ import numpy as np
 # create a food list 
 food_menu={
     "food_name":["sandwich","burger","pizza","rotli","salad","pav bhaji","magi","pepsi","dosa","samosa","tea","cofi"],
-    
     "wastage":[50,10,100,25,15,25,30,45,78,25,90,25]
 }
 
